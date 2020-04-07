@@ -3,5 +3,5 @@
 <ul>
 <li><p>1612538	BÙI PHẠM ĐĂNG QUANG</p></li>
 <li><p>1712863	TRƯƠNG VĂN TÚ</p></li>
-<li><p>1712875	NGUYỄN MẠNH TUẤNG/p></li>
+<li><p>1712875	NGUYỄN MẠNH TUẤN</p></li>
 <li><p>1712878	NGUYỄN THỌ TUẤN</p></li>
