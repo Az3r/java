@@ -3,7 +3,7 @@ import java.lang.reflect.Type;
 public interface IChallenger {
     boolean challenge(Player player) throws NullPointerException;
 
-    public class Factory {
+    public final static class Factory {
         private Factory() {}
         public static IChallenger create(final Type challengerType, final int value) {
             if (challengerType.equals(IntChallenger.class))
