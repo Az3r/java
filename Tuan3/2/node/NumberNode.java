@@ -1,14 +1,14 @@
 package node;
 
-public final class NumberNode implements INode {
-    float value;
+public final class NumberNode extends ANode {
 
     public NumberNode(float value) {
-        this.value = value;
+        super(null, null);
+        this.result = value;
     }
 
     @Override
     public float evaluate() {
-        return value;
+        return result;
     }
 }

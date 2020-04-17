@@ -2,8 +2,8 @@ package node;
 
 import exception.MissingOperandException;
 
-public final class DivisionNode extends OptNode {
-    public DivisionNode(INode left, INode right) {
+public final class DivisionNode extends ANode {
+    public DivisionNode(ANode left, ANode right) {
         super(left, right);
     }
 

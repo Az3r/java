@@ -1,49 +1,27 @@
 package main;
 
-import java.io.File;
-import java.nio.file.Paths;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import exception.SyntaxError;
 
 public final class Program {
     public static void main(String[] args) {
+        // setup
         Scanner scanner = new Scanner(System.in);
-
-        File f = Paths.get("test_cases.txt").toFile();
-        if (f.exists()) {
-            System.out.print("Found test cases file, do you want to run tests? (y/n): ");
-            if (scanner.nextLine().charAt(0) == 'y') {
-                // run test cases
-            }
-        }
+        Calculator calculator = new Calculator();
 
         System.out.println("Enter your expression and program will return the result. Enter 'q' to exit.");
         while (true) {
-            String exp = scanner.next();
+            String exp = scanner.nextLine();
             if (exp.charAt(0) == 'q')
                 break;
-            if(checkSyntax(exp)) {
-                // evaluate expression
-            }
-            else {
-                System.out.println("Syntax error");
+
+            try {
+                System.out.println(String.format("= %f", calculator.calculate(exp)));
+            } catch (SyntaxError e) {
+                System.out.println(e.getMessage());
             }
         }
 
         scanner.close();
     }
-
-    public static boolean checkSyntax(String exp) {
-        String regex = "(\\s?\\d\\s?[-+*/]\\s?\\d\\s?)+";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher m = pattern.matcher(exp);
-        return m.matches();
-    }
-
-    /** Convert prefix expression */
-    public static String toPrefix(String exp) {
-        return "";
-    }
-
 }

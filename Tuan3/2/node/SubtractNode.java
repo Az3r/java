@@ -2,9 +2,9 @@ package node;
 
 import exception.MissingOperandException;
 
-public final class SubtractNode extends OptNode {
+public final class SubtractNode extends ANode {
 
-    public SubtractNode(INode left, INode right) {
+    public SubtractNode(ANode left, ANode right) {
         super(left, right);
     }
 
