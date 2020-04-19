@@ -3,6 +3,13 @@ package main;
 import java.util.regex.Pattern;
 import exception.SyntaxError;
 import node.ANode;
+import node.CloseParentheseNode;
+import node.DivisionNode;
+import node.MultiplyNode;
+import node.NumberNode;
+import node.OpenParentheseNode;
+import node.PlusNode;
+import node.SubtractNode;
 
 import java.util.ArrayList;
 import java.util.EmptyStackException;
@@ -23,16 +30,16 @@ public final class Calculator {
     }
 
     public float calculate(String exp) throws SyntaxError {
-        exp = removeWhiteSpace(exp);
+        String s = exp.replaceAll("\\s", "");
         if (!checkSyntax(exp))
             throw new SyntaxError();
 
         // convert to prefix expression
         try {
-            ArrayList<Object> infix = parse(exp);
-            Stack<Object> prefix = toPrefix(infix);
-            ANode root = buildNode(prefix);
-            if (root == null) throw new SyntaxError();
+            ArrayList<ANode> infix = parse(s);
+            ANode root = buildExpressionTree(infix);
+            if (root == null)
+                throw new SyntaxError();
             return root.evaluate();
         } catch (EmptyStackException e) {
             throw new SyntaxError();
@@ -48,47 +55,49 @@ public final class Calculator {
     }
 
     /** parse expression string into a list of numbers and operators */
-    private static ArrayList<Object> parse(String exp) {
+    private static ArrayList<ANode> parse(String exp) {
         String validNumbers = "0123456789.";
-        ArrayList<Object> list = new ArrayList<>();
+        ArrayList<ANode> list = new ArrayList<>();
         StringBuilder numBuiler = new StringBuilder();
+        if (exp.charAt(0) == '-')
+            numBuiler.append(0);
         for (int i = 0; i < exp.length(); ++i) {
             char ch = exp.charAt(i);
             if (validNumbers.indexOf(ch) >= 0)
                 numBuiler.append(ch);
             else {
-                if (numBuiler.length() > 0)
-                    list.add(Float.parseFloat(numBuiler.toString()));
-                list.add(ch);
+                if (numBuiler.length() > 0) {
+                    float f = Float.parseFloat(numBuiler.toString());
+                    list.add(new NumberNode(f));
+                }
+                list.add(ANode.Factory.create(ch, null, null));
                 numBuiler = new StringBuilder();
             }
         }
-        if (numBuiler.length() > 0)
-            list.add(Float.parseFloat(numBuiler.toString()));
+        if (numBuiler.length() > 0) {
+            float f = Float.parseFloat(numBuiler.toString());
+            list.add(new NumberNode(f));
+        }
         return list;
     }
 
-    private static Stack<Object> toPrefix(ArrayList<Object> infix) throws EmptyStackException {
-        Stack<Object> output = new Stack<>();
-        Stack<Float> operands = new Stack<>();
-        Stack<Character> operators = new Stack<>();
-        Object left, right;
-        for (Object o : infix) {
-            if (o instanceof Float)
-                operands.push((Float) o);
+    private static ANode buildExpressionTree(ArrayList<ANode> infix) throws EmptyStackException {
+        Stack<ANode> operands = new Stack<>();
+        Stack<ANode> operators = new Stack<>();
+        for (final ANode node : infix) {
+            if (node instanceof NumberNode)
+                operands.push(node);
             else {
-                Character ch = (Character) o;
-                if (ch == '(')
-                    operators.push(ch);
-                else if (ch == ')') {
-                    while (!operators.empty() && operators.peek() != '(') {
 
+                if (node instanceof OpenParentheseNode)
+                    operators.push(node);
+                else if (node instanceof CloseParentheseNode) {
+                    while (!(operators.empty() || operators.peek() instanceof OpenParentheseNode)) {
                         // Add operands and operator in form operator + operand1 + operand2.
-                        right = operands.size() < 2 ? output.pop() : operands.pop();
-                        left = operands.empty() ? output.pop() : operands.pop();
-                        output.add(right);
-                        output.add(left);
-                        output.add(operators.pop());
+                        ANode opt = operators.pop();
+                        opt.right = operands.pop();
+                        opt.left = operands.pop();
+                        operands.push(opt);
                     }
                     // Pop opening bracket from stack.
                     operators.pop();
@@ -97,16 +106,14 @@ public final class Calculator {
                 // popping high priority operators from operators stack and pushing result in
                 // operands stack.
                 else {
-                    while (!operators.empty() && getPriority(ch) <= getPriority(operators.peek())) {
-
+                    while (!(operators.empty() || getPriority(node) > getPriority(operators.peek()))) {
                         // Add operands and operator in form operator + operand1 + operand2.
-                        right = operands.size() < 2 ? output.pop() : operands.pop();
-                        left = operands.empty() ? output.pop() : operands.pop();
-                        output.add(right);
-                        output.add(left);
-                        output.add(operators.pop());
+                        ANode opt = operators.pop();
+                        opt.right = operands.pop();
+                        opt.left = operands.pop();
+                        operands.push(opt);
                     }
-                    operators.push(ch);
+                    operators.push(node);
                 }
             }
 
@@ -116,40 +123,19 @@ public final class Calculator {
         // result of each pop operands stack.
         while (!operators.empty()) {
             // Add operands and operator in form operator + operand1 + operand2.
-            right = operands.size() < 2 ? output.pop() : operands.pop();
-            left = operands.empty() ? output.pop() : operands.pop();
-            output.add(right);
-            output.add(left);
-            output.add(operators.pop());
+            ANode opt = operators.pop();
+            opt.right = operands.pop();
+            opt.left = operands.pop();
+            operands.push(opt);
         }
-        return output;
-    }
-
-    /** build expression tree from prefix expression */
-    private static ANode buildNode(Stack<Object> nodes) throws EmptyStackException {
-        if (nodes.empty())
-            return null;
-        Object o = nodes.peek();
-        if (o instanceof Float)
-            return ANode.Factory.create((float) o);
-
-        nodes.pop();
-        ANode left = buildNode(nodes);
-        nodes.pop();
-        ANode right = buildNode(nodes);
-
-        return ANode.Factory.create((char) o, left, right);
-    }
-
-    private static String removeWhiteSpace(String s) {
-        return s.replaceAll("\\s", "");
+        return operands.peek();
     }
 
     // Function to find priority of given operator.
-    static int getPriority(char ch) {
-        if (ch == '-' || ch == '+')
+    static int getPriority(ANode ch) {
+        if (ch instanceof SubtractNode || ch instanceof PlusNode)
             return 1;
-        else if (ch == '*' || ch == '/')
+        else if (ch instanceof MultiplyNode || ch instanceof DivisionNode)
             return 2;
         return 0;
     }

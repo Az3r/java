@@ -2,7 +2,6 @@ package node;
 
 import java.lang.reflect.Type;
 import java.util.InputMismatchException;
-
 import exception.MissingOperandException;
 
 public abstract class ANode  {
@@ -30,6 +29,10 @@ public abstract class ANode  {
                 return new MultiplyNode(left, right);
             else if (opt == '/')
                 return new DivisionNode(left, right);
+            else if (opt == '(')
+                return new OpenParentheseNode();
+            else if (opt == ')')
+                return new CloseParentheseNode();
             throw new InputMismatchException("operator is " + opt);
         }
 
@@ -39,18 +42,6 @@ public abstract class ANode  {
 
         public static ANode create(char opt) {
             return create(opt,null,null);
-        }
-
-        public static ANode create(Type type, ANode left, ANode right) {
-            if (type.equals(SubtractNode.class))
-                return new SubtractNode(left, right);
-            else if (type.equals(PlusNode.class))
-                return new PlusNode(left, right);
-            else if (type.equals(MultiplyNode.class))
-                return new MultiplyNode(left, right);
-            else if (type.equals(DivisionNode.class))
-                return new DivisionNode(left, right);
-            throw new InputMismatchException("type is " + type.getTypeName());
         }
     }
 }
