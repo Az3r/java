@@ -18,11 +18,17 @@ public final class Program {
         System.out.println("2. Academic gate");
         System.out.println("3. Power gate");
         System.out.println(String.format(
-                "For the next %d line, each line enter t v where t is challenge type and v is challenge's difficulty", N));
+                "For the next %d line, each line enter t v [m] where t is challenge type and v is challenge's difficulty,\n"
+                        + "m (optional) is the amount of items if it is buiness gate",
+                N));
+        scanner.nextLine();
         for (int i = 0; i < N; ++i) {
-            int t = scanner.nextInt();
-            int v = scanner.nextInt();
-            challengers.add(IChallenger.Factory.create(challengeTypes[t - 1], v));
+            String s = scanner.nextLine();
+            String[] inputs = s.split("\\s", 3);
+            int t = Integer.parseInt(inputs[0]);
+            int v = Integer.parseInt(inputs[1]);
+            Integer m = inputs.length == 3 ? Integer.parseInt(inputs[2]) : null;
+            challengers.add(IChallenger.Factory.create(challengeTypes[t - 1], v, m));
         }
 
         // input player's stats
@@ -42,6 +48,7 @@ public final class Program {
             }
         }
         System.out.println(success ? "The prince has saved the princess" : ("The prince has failed at gate " + gate));
+        if (success) System.out.println("remain cash: " + player.cash);
         scanner.close();
     }
 }
