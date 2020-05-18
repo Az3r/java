@@ -20,10 +20,16 @@ public class Main {
     public static void write(final OutputStream ostream, final String content) throws IOException {
         ostream.write(content.getBytes());
     }
-    public static String read(final InputStream istream) throws  IOException {
+
+    public static String read(final InputStream istream) throws IOException {
         return new String(istream.readAllBytes());
     }
-    public static String encrypt(final IEncrypter IEncrypter, String content) {
-        return IEncrypter.encrypt(content);
+
+    public static String encrypt(final IEncrypter encrypter, String content) {
+        return encrypter.encrypt(content);
+    }
+
+    public static String decrypt(final IEncrypter encrypter, String encrypted) {
+        return encrypter.decrypt(encrypted);
     }
 }

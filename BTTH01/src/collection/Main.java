@@ -6,7 +6,4 @@ public class Main {
 
     }
 
-    public int[] Dijkstra(int[][] input) {
-        
-    }
 }
