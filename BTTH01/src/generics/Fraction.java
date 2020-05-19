@@ -23,8 +23,14 @@ public class Fraction implements IFraction, Comparable<Fraction> {
     }
 
     @Override
-    public int compareTo(Fraction o) {
+    public int compareTo(Fraction o) throws NullPointerException {
+        if (o == null) throw new NullPointerException("compared object is null");
         float diff = this.getNumerator() * o.getDenominator() - this.getDenominator() * o.getNumerator();
         return sign(diff);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%f/%f", getNumerator(), getDenominator());
     }
 }

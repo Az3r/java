@@ -22,9 +22,15 @@ public class ComplexNumber implements IComplexNumber, Comparable<ComplexNumber> 
     }
 
     @Override
-    public int compareTo(ComplexNumber o) {
+    public int compareTo(ComplexNumber o) throws NullPointerException {
+        if (o == null) throw new NullPointerException("compared object is null");
         int realDiff = sign(this.getReal() - o.getReal());
         int imgDiff = sign(this.getImg() - o.getImg());
         return realDiff != 0 ? realDiff : imgDiff;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%f + %fi", getReal(), getImg());
     }
 }

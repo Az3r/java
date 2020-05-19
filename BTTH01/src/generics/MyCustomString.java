@@ -1,6 +1,6 @@
 package generics;
 
-public class MyCustomString implements CharSequence, Comparable<CharSequence> {
+public class MyCustomString implements CharSequence, Comparable<MyCustomString> {
 
     private final String str;
 
@@ -24,7 +24,13 @@ public class MyCustomString implements CharSequence, Comparable<CharSequence> {
     }
 
     @Override
-    public int compareTo(CharSequence o) {
+    public String toString() {
+        return str;
+    }
+
+    @Override
+    public int compareTo(MyCustomString o) throws NullPointerException {
+        if (o == null) throw new NullPointerException("compared object is null");
         return Helper.sign(this.length() - o.length());
     }
 }

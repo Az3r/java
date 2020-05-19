@@ -9,6 +9,10 @@ public final class QueryableCollection<T extends Comparable<T>> extends ArrayLis
         super(c);
     }
 
+    public QueryableCollection(int initialCapacity) {
+        super(initialCapacity);
+    }
+
     @Override
     public T getMax() {
         if (size() == 0) return null;
