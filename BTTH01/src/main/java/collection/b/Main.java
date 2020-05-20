@@ -1,4 +1,4 @@
-package collection;
+package collection.b;
 
 public class Main {
 

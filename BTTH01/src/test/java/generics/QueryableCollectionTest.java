@@ -1,6 +1,5 @@
-package test.generics;
+package generics;
 
-import generics.QueryableCollection;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -34,12 +33,9 @@ class QueryableCollectionTest {
 
     @Test
     void getMax_NullElements() {
-        assertThrows(NullPointerException.class, new Executable() {
-            @Override
-            public void execute() throws Throwable {
-                QueryableCollection<Integer> collection = new QueryableCollection<>(Arrays.asList(null, null, 1, 2, 3));
-                collection.getMax();
-            }
+        assertThrows(NullPointerException.class, () -> {
+            QueryableCollection<Integer> collection = new QueryableCollection<>(Arrays.asList(null, null, 1, 2, 3));
+            collection.getMax();
         });
     }
 }

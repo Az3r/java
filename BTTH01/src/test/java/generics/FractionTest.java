@@ -1,7 +1,5 @@
-package test.generics;
+package generics;
 
-import generics.ComplexNumber;
-import generics.Fraction;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 import org.junit.jupiter.params.ParameterizedTest;
