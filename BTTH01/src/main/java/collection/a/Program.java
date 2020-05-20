@@ -4,6 +4,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static collection.Helper.arrayToString;
+import static collection.Helper.fromString;
+
 public class Program {
 
     public static void main(String[] args) {
@@ -25,18 +28,4 @@ public class Program {
         scanner.close();
     }
 
-    private static String arrayToString(List collection) {
-        StringBuilder str = new StringBuilder();
-        for (Object o : collection) {
-            str.append(String.format("%s, ", o.toString()));
-        }
-        return str.toString();
-    }
-
-    public static List<Integer> fromString(String input) {
-        if (input == null) return Collections.emptyList();
-        String[] tokens = input.split("[\\s,]+");
-        Stream<Integer> ints = Stream.of(tokens).map(Integer::parseInt);
-        return ints.collect(Collectors.toList());
-    }
 }
