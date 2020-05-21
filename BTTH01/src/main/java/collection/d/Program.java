@@ -32,11 +32,11 @@ public class Program {
 
                 System.out.println("Enter start and stop vertex. I.e: 2 3)");
                 List<Integer> params = Helper.fromString(scanner.nextLine(), 2);
-                Stack<GraphVertex> path = dijkstra(graph, params.get(0), params.get(1));
+                GraphPath path = dijkstra(graph, params.get(0), params.get(1));
 
                 System.out.println("Finding path...");
                 if (path.empty()) System.out.printf("Cannot find path from %d to %d", params.get(0), params.get(1));
-                else System.out.printf("Path found!%n%s", display(path));
+                else System.out.printf("Path found!%n%s", path.display());
 
             } catch (IOException e) {
                 System.err.println("An error happened when opening file");
@@ -48,15 +48,7 @@ public class Program {
         scanner.close();
     }
 
-    private static String display(Stack<GraphVertex> path) {
-        StringBuilder builder = new StringBuilder();
-        int sum = 0;
-        for (int i = 0; i < path.size() - 1; i++) {
-            sum += path.get(i + 1).weight;
-            builder.append(String.format("%d -> %d: %d%n", path.get(i).vertex, path.get(i + 1).vertex, sum));
-        }
-        return builder.toString();
-    }
+
 
     public static int getWeight(Stack<GraphVertex> path) {
         if (path.empty()) return -1;
@@ -94,7 +86,7 @@ public class Program {
      * @param dest  destination vertex
      * @return an array containing all vertices needed to reach dest
      */
-    public static Stack<GraphVertex> dijkstra(int[][] graph, int src, int dest) {
+    public static GraphPath dijkstra(int[][] graph, int src, int dest) {
         if (graph == null) throw new NullPointerException("graph");
         if (graph.length == 0) throw new IllegalArgumentException("graph");
         // check if graph has square shape
@@ -109,39 +101,32 @@ public class Program {
         Arrays.fill(visited, false);
         visited[src] = true;
 
-        Stack<GraphVertex> state = new Stack<>();
-        state.push(new GraphVertex(src, 0));
+        // paths[i] is a GraphPath from src to i
+        List<GraphPath> paths = new ArrayList<>(graph.length);
+        for (int i = 0; i < graph.length; i++) {
+            paths.add(new GraphPath());
+        }
+        paths.get(src).add(new GraphVertex(src, 0));
 
-        return find(graph, dest, visited, state);
-    }
+        for (int i = 0; i < graph.length; ++i) {
+            for (int begin = 0; begin < graph.length; begin++) {
+                PriorityQueue<GraphVertex> distances = new PriorityQueue<>();
+                if (visited[begin]) {
+                    for (int end = 0; end < visited.length; end++) {
+                        if (!visited[end] && graph[begin][end] > 0)
+                            distances.offer(new GraphVertex(end, graph[begin][end]));
+                    }
+                }
+                if (!distances.isEmpty()) {
+                    GraphVertex endVertex = distances.remove();
+                    visited[endVertex.vertex] = true;
 
-    /**
-     * @apiNote method uses greedy algorithm and {@link PriorityQueue} to find shortest distance
-     */
-    private static Stack<GraphVertex> find(int[][] graph, int dest, boolean[] visited, Stack<GraphVertex> state) {
-        if (state.size() == 0) return state;
-        int src = state.peek().vertex;
-        if (src == dest) return state;
-
-        PriorityQueue<GraphVertex> distances = new PriorityQueue<>();
-        for (int i = 0; i < visited.length; i++) {
-            if (!visited[i] && graph[src][i] > 0) {
-                distances.add(new GraphVertex(i, graph[src][i]));
+                    paths.get(endVertex.vertex).addAll(paths.get(begin));
+                    paths.get(endVertex.vertex).add(endVertex);
+                }
             }
         }
 
-        // can't find any vertex to go so we backtrack here
-        if (distances.isEmpty()) {
-            GraphVertex vertex = state.pop();
-            return find(graph, dest, visited, state);
-        }
-
-        // get the vertext with shortest distance
-        GraphVertex vertex = distances.remove();
-        src = vertex.vertex;
-        visited[src] = true;
-        state.push(vertex);
-
-        return find(graph, dest, visited, state);
+        return paths.get(dest);
     }
 }

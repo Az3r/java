@@ -94,8 +94,8 @@ class ProgramTest {
     private static Stream<Arguments> vertexProvider() {
         return Stream.of(
                 Arguments.of(6, 6, new int[]{6}, 0),
-                Arguments.of(6, 5, new int[0], -1),
-                Arguments.of(5, 6, new int[0], -1),
+                Arguments.of(6, 5, new int[0], Integer.MAX_VALUE),
+                Arguments.of(5, 6, new int[0], Integer.MAX_VALUE),
                 Arguments.of(5, 3, new int[]{5, 1, 3}, 8),
                 Arguments.of(3, 5, new int[]{3, 1, 5}, 8)
         );

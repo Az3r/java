@@ -10,6 +10,14 @@ public class GraphVertex implements Comparable<GraphVertex> {
     }
 
     @Override
+    public String toString() {
+        return "GraphVertex{" +
+                "vertex=" + vertex +
+                ", weight=" + weight +
+                '}';
+    }
+
+    @Override
     public int compareTo(GraphVertex o) {
         if (o == null) throw new NullPointerException("o");
         return this.weight - o.weight;
