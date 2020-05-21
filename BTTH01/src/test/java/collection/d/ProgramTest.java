@@ -9,7 +9,6 @@ import org.junit.jupiter.params.provider.NullSource;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Stack;
 import java.util.stream.Stream;
 
 class ProgramTest {
@@ -154,10 +153,10 @@ class ProgramTest {
     @MethodSource("vertexProvider")
     void dijkstra_src_dest_test(int src, int dest, int[] expectedPath, int expectedWeight) {
         int[][] graph = validGraph().get(0);
-        Stack<GraphVertex> result = Program.dijkstra(graph, src, dest);
+        GraphPath result = Program.dijkstra(graph, src, dest);
 
-        int[] path = result.stream().mapToInt(value -> value.vertex).toArray();
-        int weight = Program.getWeight(result);
+        int[] path = result.path();
+        int weight = result.totalWeight();
 
         Assertions.assertArrayEquals(expectedPath, path);
         Assertions.assertEquals(expectedWeight, weight);

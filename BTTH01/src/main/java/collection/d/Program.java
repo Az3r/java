@@ -36,7 +36,8 @@ public class Program {
 
                 System.out.println("Finding path...");
                 if (path.empty()) System.out.printf("Cannot find path from %d to %d", params.get(0), params.get(1));
-                else System.out.printf("Path found!%n%s", path.display());
+                else System.out.printf("Path found: %s%n" +
+                        "Distance from source:%n%s", path.displayPath(), path.displayPathWeight());
 
             } catch (IOException e) {
                 System.err.println("An error happened when opening file");
@@ -47,7 +48,6 @@ public class Program {
 
         scanner.close();
     }
-
 
 
     public static int getWeight(Stack<GraphVertex> path) {

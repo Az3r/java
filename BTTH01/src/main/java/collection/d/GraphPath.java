@@ -17,13 +17,23 @@ public class GraphPath extends Stack<GraphVertex> implements Comparable<GraphPat
         return this.stream().mapToInt(value -> value.vertex).toArray();
     }
 
-    public String display() {
+    public String displayPathWeight() {
         StringBuilder builder = new StringBuilder();
+
         int sum = 0;
         for (int i = 0; i < size() - 1; i++) {
             sum += get(i + 1).weight;
             builder.append(String.format("%d -> %d: %d%n", get(i).vertex, get(i + 1).vertex, sum));
         }
+        return builder.toString();
+    }
+
+    public String displayPath() {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < size() - 1; i++) {
+            builder.append(String.format("%d -> ", get(i).vertex));
+        }
+        builder.append(get(size() - 1).vertex);
         return builder.toString();
     }
 
