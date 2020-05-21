@@ -20,7 +20,7 @@ public class Program {
 
         System.out.printf("Input: %s", arrayToString(tokens));
         System.out.println();
-        
+
         try {
             Collections.swap(Arrays.asList(tokens), pos.get(0), pos.get(1));
 

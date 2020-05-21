@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff4deb6-2889-48d1-849f-19c114309962" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/collection/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/collection/HelperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collection/a/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collection/a/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collection/b/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collection/b/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/collection/a/ProgramTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collection/d/GraphVertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/collection/d/ProgramTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collection/b/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collection/b/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collection/c/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collection/c/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collection/d/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collection/d/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/b/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/b/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/c/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="collection.d" />
       <recent name="collection" />
       <recent name="collection.b" />
       <recent name="collection.a" />
@@ -58,13 +62,13 @@
       <recent name="D:\Java\java\BTTH01\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Program (1)">
-    <configuration name="Program (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.b.Program" />
+  <component name="RunManager" selected="Application.Program">
+    <configuration name="Program (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.c.Program" />
       <module name="BTTH01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.b.*" />
+          <option name="PATTERN" value="collection.c.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,11 +77,11 @@
       </method>
     </configuration>
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.a.Program" />
+      <option name="MAIN_CLASS_NAME" value="collection.d.Program" />
       <module name="BTTH01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.a.*" />
+          <option name="PATTERN" value="collection.d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,21 +143,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BTTH01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="collection" />
-      <option name="MAIN_CLASS_NAME" value="collection.HelperTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyCustomStringTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="BTTH01" />
       <useClassPathOnly />
@@ -172,32 +161,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProgramTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BTTH01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.a.*" />
+          <option name="PATTERN" value="collection.d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="collection.a" />
-      <option name="MAIN_CLASS_NAME" value="collection.a.ProgramTest" />
+      <option name="PACKAGE_NAME" value="collection.d" />
+      <option name="MAIN_CLASS_NAME" value="collection.d.ProgramTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramTest.fromString_valid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProgramTest.graph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BTTH01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.a.*" />
+          <option name="PATTERN" value="collection.d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="collection.a" />
-      <option name="MAIN_CLASS_NAME" value="collection.a.ProgramTest" />
-      <option name="METHOD_NAME" value="fromString_valid" />
+      <option name="PACKAGE_NAME" value="collection.d" />
+      <option name="MAIN_CLASS_NAME" value="collection.d.ProgramTest" />
+      <option name="METHOD_NAME" value="graph(java.lang.String,int[][])" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProgramTest.graph_invalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BTTH01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="collection.d" />
+      <option name="MAIN_CLASS_NAME" value="collection.d.ProgramTest" />
+      <option name="METHOD_NAME" value="graph_invalid(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -223,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Program (1)" />
-        <item itemvalue="JUnit.HelperTest" />
-        <item itemvalue="JUnit.ProgramTest" />
-        <item itemvalue="JUnit.ProgramTest.fromString_valid" />
         <item itemvalue="Application.Program" />
+        <item itemvalue="JUnit.ProgramTest (1)" />
+        <item itemvalue="JUnit.ProgramTest.graph" />
+        <item itemvalue="JUnit.ProgramTest.graph_invalid" />
+        <item itemvalue="Application.Program (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -275,14 +280,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589940699838" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590031485167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590031485167" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1590027032702">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590027032702" />
     <state x="690" y="296" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1589944560587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="296" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589944560587" />
-    <state x="596" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589947795633">
+    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589987365094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="596" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589947795633" />
+    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1589987365094" />
+    <state x="596" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590027398208">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="596" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590027398208" />
     <state x="587" y="90" key="CommitChangelistDialog2" timestamp="1589944873816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -291,22 +308,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589941425236" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1589948554662">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1590035130224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589948554662" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1589948554662">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590035130224" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1590035130224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589948554662" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1589948554662">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590035130224" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1590035130224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589948554662" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1589948554662">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590035130224" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1590035130224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589948554662" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590035130224" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1589944382095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -331,10 +348,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589943385024" />
-    <state x="908" y="200" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589947033509">
+    <state x="908" y="200" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589960908266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="908" y="200" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589947033509" />
+    <state x="908" y="200" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589960908266" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BTTH01$Main.ic" NAME="Main Coverage Results" MODIFIED="1589941435799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
