@@ -49,12 +49,6 @@ public class Program {
         scanner.close();
     }
 
-
-    public static int getWeight(Stack<GraphVertex> path) {
-        if (path.empty()) return -1;
-        return path.stream().mapToInt(value -> value.weight).sum();
-    }
-
     /**
      * create a vertices graph from a given string
      *
