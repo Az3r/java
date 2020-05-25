@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ff4deb6-2889-48d1-849f-19c114309962" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/CommandLineProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/CommandLineProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/ProgramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/ProgramTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BTTH01.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/collection/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/Helper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/collection/a/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/a/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/collection/b/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/b/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/collection/c/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/c/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/collection/d/GraphPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/d/GraphPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/collection/d/GraphVertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/d/GraphVertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/collection/d/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/d/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generics/ComplexNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/ComplexNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generics/Fraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/Fraction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generics/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/Helper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generics/IComplexNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/IComplexNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generics/IFraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/IFraction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generics/IQueryable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/IQueryable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generics/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generics/MyCustomString.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/MyCustomString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generics/QueryableCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/QueryableCollection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/CaesarEncrypter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/CaesarEncrypter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ICeasarEncrypter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ICeasarEncrypter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/IEncrypter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/IEncrypter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ROT13Encrypter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ROT13Encrypter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/BTTH01.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/collection/HelperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/collection/HelperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/collection/d/ProgramTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/collection/d/ProgramTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/ComplexNumberTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/ComplexNumberTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/ComplexNumberTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/ComplexNumberTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/FractionTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/FractionTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/FractionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/FractionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/MyCustomStringTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/MyCustomStringTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/QueryableCollectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/QueryableCollectionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/CaesarEncrypterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/CaesarEncrypterTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="8ff4deb6-2889-48d1-849f-19c114309962" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -273,7 +238,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done 3.1" />
     <MESSAGE value="testing CommandLineProgram" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing CommandLineProgram" />
+    <MESSAGE value="done 1.1 using CLI" />
+    <option name="LAST_COMMIT_MESSAGE" value="done 1.1 using CLI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="133" key="#CaesarEncrypterTest" timestamp="1589941294384">
@@ -336,10 +302,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="596" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590027398208" />
-    <state x="587" y="90" key="CommitChangelistDialog2" timestamp="1590395570358">
+    <state x="587" y="90" key="CommitChangelistDialog2" timestamp="1590401279260">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="90" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590395570358" />
+    <state x="587" y="90" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590401279260" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590381684251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
