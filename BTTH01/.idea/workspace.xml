@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff4deb6-2889-48d1-849f-19c114309962" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/collection/d/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collection/d/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/CommandLineProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/ProgramTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/empty-file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/normal-file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/d/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/d/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -42,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="io" />
       <recent name="collection.d" />
       <recent name="collection" />
       <recent name="collection.b" />
@@ -55,7 +64,7 @@
       <recent name="D:\Java\java\BTTH01\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="JUnit.ProgramTest">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collection.d.Program" />
       <module name="BTTH01" />
@@ -141,17 +150,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProgramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BTTH01" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.d.*" />
+          <option name="PATTERN" value="io.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="collection.d" />
-      <option name="MAIN_CLASS_NAME" value="collection.d.ProgramTest" />
+      <option name="PACKAGE_NAME" value="io" />
+      <option name="MAIN_CLASS_NAME" value="io.ProgramTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test/resources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,17 +185,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramTest.graph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProgramTest.getInput_valid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BTTH01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.d.*" />
+          <option name="PATTERN" value="io.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="collection.d" />
-      <option name="MAIN_CLASS_NAME" value="collection.d.ProgramTest" />
-      <option name="METHOD_NAME" value="graph(java.lang.String,int[][])" />
+      <option name="PACKAGE_NAME" value="io" />
+      <option name="MAIN_CLASS_NAME" value="io.ProgramTest" />
+      <option name="METHOD_NAME" value="getInput_valid(java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProgramTest" />
+        <item itemvalue="JUnit.ProgramTest.getInput_valid" />
         <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.ProgramTest.rewrite_dijkstra_src_dest_test" />
         <item itemvalue="JUnit.ProgramTest.dijkstra_src_dest_test" />
-        <item itemvalue="JUnit.ProgramTest (1)" />
-        <item itemvalue="JUnit.ProgramTest.graph" />
       </list>
     </recent_temporary>
   </component>
@@ -264,6 +277,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="563" y="133" key="#MyCustomStringTest/0.0.1920.1040@0.0.1920.1040" timestamp="1589941346664" />
+    <state x="563" y="133" key="#ProgramTest" timestamp="1590381688751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="563" y="133" key="#ProgramTest/0.0.1920.1040@0.0.1920.1040" timestamp="1590381688751" />
     <state x="440" y="94" key="#Project_Structure" timestamp="1589940175810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,10 +297,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590031485167" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1590055805369">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1590393891837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590055805369" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590393891837" />
     <state x="690" y="296" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1589944560587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -300,26 +317,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="587" y="90" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589944873816" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1589941425236">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590381684251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589941425236" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1590056872100">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590381684251" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1590392024334">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590056872100" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1590056872100">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590392024334" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1590392024333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590056872100" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1590056872099">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590392024333" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1590392024333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590056872099" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1590056872100">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590392024333" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1590392024333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590056872100" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590392024333" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1590056872100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -340,14 +357,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="77" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589940323688" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1589943385024">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1590393737880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589943385024" />
-    <state x="908" y="200" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589960908266">
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590393737880" />
+    <state x="908" y="200" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590378618008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="908" y="200" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589960908266" />
+    <state x="908" y="200" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590378618008" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590382415405">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590382415405" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BTTH01$Main.ic" NAME="Main Coverage Results" MODIFIED="1589941435799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
