@@ -2,15 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff4deb6-2889-48d1-849f-19c114309962" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/CommandLineProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/ProgramTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/empty-file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/normal-file.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/CommandLineProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/CommandLineProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/ProgramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/ProgramTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BTTH01.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/Helper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/a/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/a/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/b/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/b/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/c/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/c/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/d/GraphPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/d/GraphPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/d/GraphVertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/d/GraphVertex.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/collection/d/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collection/d/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generics/ComplexNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/ComplexNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generics/Fraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/Fraction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generics/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/Helper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generics/IComplexNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/IComplexNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generics/IFraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/IFraction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generics/IQueryable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/IQueryable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generics/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generics/MyCustomString.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/MyCustomString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generics/QueryableCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generics/QueryableCollection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/CaesarEncrypter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/CaesarEncrypter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/ICeasarEncrypter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ICeasarEncrypter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/IEncrypter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/IEncrypter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/ROT13Encrypter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ROT13Encrypter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/BTTH01.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/collection/HelperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/collection/HelperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/collection/d/ProgramTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/collection/d/ProgramTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/ComplexNumberTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/ComplexNumberTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/ComplexNumberTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/ComplexNumberTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/FractionTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/FractionTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/FractionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/FractionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/MyCustomStringTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/MyCustomStringTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/generics/QueryableCollectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generics/QueryableCollectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/CaesarEncrypterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/CaesarEncrypterTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +89,20 @@
       <recent name="D:\Java\java\BTTH01\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProgramTest">
+  <component name="RunManager" selected="Application.CommandLineProgram">
+    <configuration name="CommandLineProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.CommandLineProgram" />
+      <module name="BTTH01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collection.d.Program" />
       <module name="BTTH01" />
@@ -169,22 +207,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramTest.dijkstra_src_dest_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BTTH01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collection.d.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="collection.d" />
-      <option name="MAIN_CLASS_NAME" value="collection.d.ProgramTest" />
-      <option name="METHOD_NAME" value="dijkstra_src_dest_test(int,int,int[],int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProgramTest.getInput_valid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BTTH01" />
       <extension name="coverage">
@@ -237,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CommandLineProgram" />
         <item itemvalue="JUnit.ProgramTest" />
         <item itemvalue="JUnit.ProgramTest.getInput_valid" />
         <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.ProgramTest.rewrite_dijkstra_src_dest_test" />
-        <item itemvalue="JUnit.ProgramTest.dijkstra_src_dest_test" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +272,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done 3.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="done 3.1" />
+    <MESSAGE value="testing CommandLineProgram" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing CommandLineProgram" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="133" key="#CaesarEncrypterTest" timestamp="1589941294384">
@@ -313,46 +336,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="596" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590027398208" />
-    <state x="587" y="90" key="CommitChangelistDialog2" timestamp="1589944873816">
+    <state x="587" y="90" key="CommitChangelistDialog2" timestamp="1590395570358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="90" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589944873816" />
+    <state x="587" y="90" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590395570358" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590381684251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590381684251" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1590392024334">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1590401200392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590392024334" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1590392024333">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590401200392" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1590401200392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590392024333" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1590392024333">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590401200392" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1590401200391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590392024333" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1590392024333">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590401200391" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1590401200392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590392024333" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1590056872100">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590401200392" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1590401200393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590056872100" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1590056872100">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590401200393" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1590401200392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590056872100" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1590056872100">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590401200392" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1590401200392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590056872100" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1590056872100">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590401200392" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1590401200392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590056872100" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590401200392" />
     <state x="708" y="77" key="Maven.ArtifactSearchDialog" timestamp="1589940323688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -365,6 +388,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="908" y="200" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590378618008" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1590395742738">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590395742738" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590382415405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
